@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://lazarocardoso.github.io/preloaderJSLottie/lottie.json',
+        path: 'https://lottie.host/b23739a0-11f9-477d-bad8-f42d0d5b83bf/TQQJmSq6wS.json',
     });
 }
 
