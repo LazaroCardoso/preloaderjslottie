@@ -28,7 +28,7 @@ lottieContainer.style.cssText = `
 document.body.appendChild(overlay);
 document.body.appendChild(lottieContainer);
 
-function showLottieAnimation() {
+/*function showLottieAnimation() {
     // Mostrar o container e iniciar a animação
     lottieContainer.style.display = 'block';
     lottie.loadAnimation({
@@ -38,7 +38,7 @@ function showLottieAnimation() {
         autoplay: true,
         path: 'https://lottie.host/3dcda63c-2459-46be-9fdc-c3ebcadaf142/K5F1sRs7wR.json',
     });
-}
+}*/
 
 function hideOverlay() {
     overlay.style.display = 'none';
