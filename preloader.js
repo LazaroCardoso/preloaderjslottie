@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://lottie.host/b23739a0-11f9-477d-bad8-f42d0d5b83bf/TQQJmSq6wS.json',
+        path: 'https://lottie.host/04879a23-ea54-48bb-a7fc-c7b0f91f4661/j3OCBLfxuC.json',
     });
 }
 
