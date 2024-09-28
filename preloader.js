@@ -24,26 +24,33 @@ lottieContainer.style.cssText = `
     left: 50%;
     transform: translate(-50%, -50%);
 `;
-lottieContainer.style.display = 'none';
 
 document.body.appendChild(overlay);
 document.body.appendChild(lottieContainer);
 
-function hideOverlay() {
-    overlay.style.display = 'none';
+function showLottieAnimation() {
+    // Mostrar o container e iniciar a animação
     lottieContainer.style.display = 'block';
-    // Substitua pela URL direta do seu arquivo JSON do Lottie.
     lottie.loadAnimation({
         container: lottieContainer,
-        renderer: 'svg', // ou 'canvas' se preferir
+        renderer: 'svg',
         loop: true,
         autoplay: true,
         path: 'https://lottie.host/3dcda63c-2459-46be-9fdc-c3ebcadaf142/K5F1sRs7wR.json',
     });
 }
 
+function hideOverlay() {
+    overlay.style.display = 'none';
+    lottieContainer.style.display = 'none'; // Corrigido para esconder a animação
+}
+
+// Iniciar a animação Lottie quando o conteúdo estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay(); // Teste sem o setTimeout
+    showLottieAnimation();
 });
 
-window.addEventListener('load');
+// Esconder o overlay e animação assim que a página estiver totalmente carregada
+window.addEventListener('load', () => {
+    hideOverlay();
+});
